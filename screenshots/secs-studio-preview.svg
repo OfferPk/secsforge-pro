@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#121722"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd54f"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="620" fill="url(#bgGrad)"/>
+  <rect x="20" y="20" width="960" height="580" rx="14" fill="#161d2b" fill-opacity="0.7" stroke="#00e5ff" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Top App Bar -->
+  <rect x="20" y="20" width="960" height="60" rx="14" fill="#0d111a" stroke="#00e5ff" stroke-opacity="0.2"/>
+  <circle cx="50" cy="50" r="14" fill="url(#cyanGrad)" filter="url(#glow)"/>
+  <text x="75" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">SECSForge Pro <tspan fill="#ffd54f" font-size="14">v1.0.0</tspan></text>
+  <text x="260" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#8e9cb5">Semiconductor SECS/GEM (SEMI E37 HSMS / E5 SECS-II / E30 GEM) Protocol Studio</text>
+  
+  <rect x="740" y="38" width="100" height="24" rx="12" fill="#00e5ff" fill-opacity="0.15" stroke="#00e5ff" stroke-width="1"/>
+  <text x="755" y="54" font-family="monospace" font-size="11" font-weight="bold" fill="#00e5ff">SEMI E37</text>
+
+  <rect x="850" y="38" width="110" height="24" rx="12" fill="#ffd54f" fill-opacity="0.15" stroke="#ffd54f" stroke-width="1"/>
+  <text x="862" y="54" font-family="monospace" font-size="11" font-weight="bold" fill="#ffd54f">GEM 300mm</text>
+
+  <!-- Navigation Tabs -->
+  <rect x="40" y="96" width="180" height="34" rx="6" fill="#00e5ff" fill-opacity="0.2" stroke="#00e5ff"/>
+  <text x="56" y="118" font-family="sans-serif" font-size="13" font-weight="bold" fill="#00e5ff">1. HSMS &amp; SECS-II</text>
+
+  <rect x="230" y="96" width="160" height="34" rx="6" fill="#121722" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="246" y="118" font-family="sans-serif" font-size="13" fill="#8e9cb5">2. SxFy Library</text>
+
+  <rect x="400" y="96" width="170" height="34" rx="6" fill="#121722" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="416" y="118" font-family="sans-serif" font-size="13" fill="#8e9cb5">3. 300mm FOUP</text>
+
+  <rect x="580" y="96" width="170" height="34" rx="6" fill="#121722" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="596" y="118" font-family="sans-serif" font-size="13" fill="#8e9cb5">4. Security Auditor</text>
+
+  <rect x="760" y="96" width="180" height="34" rx="6" fill="#121722" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="776" y="118" font-family="sans-serif" font-size="13" fill="#8e9cb5">5. Conduit &amp; PCAP</text>
+
+  <!-- Left Column: Packet Builder Card -->
+  <rect x="40" y="146" width="430" height="430" rx="10" fill="#0c1017" stroke="#00e5ff" stroke-opacity="0.2"/>
+  <text x="60" y="176" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff">HSMS 10-Byte Header &amp; SML Input</text>
+  
+  <rect x="60" y="200" width="180" height="36" rx="4" fill="#05070a" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="70" y="222" font-family="monospace" font-size="12" fill="#8e9cb5">Session ID: 1</text>
+
+  <rect x="260" y="200" width="190" height="36" rx="4" fill="#05070a" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="270" y="222" font-family="monospace" font-size="12" fill="#8e9cb5">TxID: 1001</text>
+
+  <rect x="60" y="250" width="180" height="36" rx="4" fill="#05070a" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="70" y="272" font-family="monospace" font-size="12" fill="#8e9cb5">Stream: S1</text>
+
+  <rect x="260" y="250" width="190" height="36" rx="4" fill="#05070a" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="270" y="272" font-family="monospace" font-size="12" fill="#8e9cb5">Function: F13 (W-Bit)</text>
+
+  <text x="60" y="315" font-family="sans-serif" font-size="12" font-weight="bold" fill="#8e9cb5">SECS Message Language (SML) Payload:</text>
+  <rect x="60" y="325" width="390" height="180" rx="6" fill="#05070a" stroke="#00e5ff" stroke-opacity="0.3"/>
+  <text x="75" y="355" font-family="monospace" font-size="13" fill="#38bdf8">&lt;L [2]</text>
+  <text x="95" y="380" font-family="monospace" font-size="13" fill="#38bdf8">  &lt;A [14] "LAM_RESEARCH_01"&gt;</text>
+  <text x="95" y="405" font-family="monospace" font-size="13" fill="#38bdf8">  &lt;A [6] "V4.2.1"&gt;</text>
+  <text x="75" y="430" font-family="monospace" font-size="13" fill="#38bdf8">&gt;.</text>
+
+  <rect x="60" y="525" width="180" height="36" rx="6" fill="url(#cyanGrad)"/>
+  <text x="95" y="548" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Encode Packet</text>
+
+  <!-- Right Column: Dissector & Hex -->
+  <rect x="490" y="146" width="470" height="430" rx="10" fill="#0c1017" stroke="#ffd54f" stroke-opacity="0.2"/>
+  <text x="510" y="176" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff">SEMI Wire Frame Dissector</text>
+
+  <text x="510" y="210" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffd54f">Raw Binary Wire Stream (Hex):</text>
+  <rect x="510" y="220" width="430" height="70" rx="6" fill="#05070a" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="525" y="248" font-family="monospace" font-size="11" fill="#ffd54f">00 00 00 24 00 01 81 0d 00 00 00 00 03 e9 01 02</text>
+  <text x="525" y="270" font-family="monospace" font-size="11" fill="#ffd54f">41 0e 4c 41 4d 5f 52 45 53 45 41 52 43 48 5f 30 31</text>
+
+  <text x="510" y="315" font-family="sans-serif" font-size="12" font-weight="bold" fill="#00e676">Dissected Message Structure:</text>
+  <rect x="510" y="325" width="430" height="180" rx="6" fill="#05070a" stroke="#00e676" stroke-opacity="0.2"/>
+  <text x="525" y="350" font-family="monospace" font-size="12" fill="#00e676">Length: 36 bytes (10-byte header + 26-byte body)</text>
+  <text x="525" y="375" font-family="monospace" font-size="12" fill="#f0f4fc">Header: S1F13 W [Session: 1, SType: Data Message]</text>
+  <text x="525" y="405" font-family="monospace" font-size="12" fill="#38bdf8">Body Structure: List (2 elements)</text>
+  <text x="545" y="430" font-family="monospace" font-size="12" fill="#38bdf8">- Item 1: ASCII (14B) "LAM_RESEARCH_01"</text>
+  <text x="545" y="455" font-family="monospace" font-size="12" fill="#38bdf8">- Item 2: ASCII (6B) "V4.2.1"</text>
+
+  <rect x="510" y="525" width="200" height="36" rx="6" fill="url(#goldGrad)"/>
+  <text x="535" y="548" font-family="sans-serif" font-size="13" font-weight="bold" fill="#07090e">&#128190; Export Wireshark PCAP</text>
+</svg>

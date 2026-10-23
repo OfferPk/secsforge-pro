@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#121722"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="amberGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd54f"/>
+      <stop offset="100%" stop-color="#ff8f00"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="500" fill="url(#bg2)"/>
+
+  <!-- Title -->
+  <text x="50" y="45" font-family="sans-serif" font-size="22" font-weight="bold" fill="#ffffff">SECSForge Pro — Semiconductor Fab Protocol &amp; Conduit Architecture</text>
+  <text x="50" y="70" font-family="sans-serif" font-size="13" fill="#8e9cb5">SEMI E37 (HSMS-SS/GS) / SEMI E5 (SECS-II) / SEMI E30 (GEM) / SEMI E87 (300mm FOUP)</text>
+
+  <!-- MES Host Station -->
+  <rect x="50" y="120" width="240" height="320" rx="10" fill="#161d2b" stroke="#00e5ff" stroke-width="1.5"/>
+  <rect x="50" y="120" width="240" height="44" rx="10" fill="#00e5ff" fill-opacity="0.15"/>
+  <text x="70" y="148" font-family="sans-serif" font-size="15" font-weight="bold" fill="#00e5ff">MES / CIM Host</text>
+  <text x="70" y="190" font-family="monospace" font-size="12" fill="#ffffff">IP: 10.100.1.1</text>
+  <text x="70" y="215" font-family="sans-serif" font-size="12" fill="#8e9cb5">• Recipe Staging (S7F1/S7F3)</text>
+  <text x="70" y="240" font-family="sans-serif" font-size="12" fill="#8e9cb5">• Remote Dispatch (S2F41)</text>
+  <text x="70" y="265" font-family="sans-serif" font-size="12" fill="#8e9cb5">• Alarm Ingestion (S5F1)</text>
+  <text x="70" y="290" font-family="sans-serif" font-size="12" fill="#8e9cb5">• Event Collection (S6F11)</text>
+  <text x="70" y="315" font-family="sans-serif" font-size="12" fill="#8e9cb5">• Session ID: 0x0001</text>
+
+  <!-- Middle: SECSForge Pro Studio Engine -->
+  <rect x="360" y="100" width="280" height="360" rx="12" fill="#0c1017" stroke="#ffd54f" stroke-width="2"/>
+  <rect x="360" y="100" width="280" height="50" rx="12" fill="url(#amberGrad2)"/>
+  <text x="390" y="132" font-family="sans-serif" font-size="16" font-weight="bold" fill="#07090e">SECSForge Pro Engine</text>
+
+  <rect x="380" y="170" width="240" height="46" rx="6" fill="#161d2b" stroke="#00e5ff" stroke-opacity="0.3"/>
+  <text x="395" y="198" font-family="sans-serif" font-size="12" font-weight="bold" fill="#00e5ff">10-Byte HSMS Header Codec</text>
+
+  <rect x="380" y="226" width="240" height="46" rx="6" fill="#161d2b" stroke="#00e5ff" stroke-opacity="0.3"/>
+  <text x="395" y="254" font-family="sans-serif" font-size="12" font-weight="bold" fill="#00e5ff">SECS-II Item Serializer (SML)</text>
+
+  <rect x="380" y="282" width="240" height="46" rx="6" fill="#161d2b" stroke="#00e5ff" stroke-opacity="0.3"/>
+  <text x="395" y="310" font-family="sans-serif" font-size="12" font-weight="bold" fill="#00e5ff">GEM State &amp; FOUP Auditor</text>
+
+  <rect x="380" y="338" width="240" height="46" rx="6" fill="#161d2b" stroke="#00e5ff" stroke-opacity="0.3"/>
+  <text x="395" y="366" font-family="sans-serif" font-size="12" font-weight="bold" fill="#00e5ff">Linux nftables &amp; Suricata L7</text>
+
+  <rect x="380" y="394" width="240" height="46" rx="6" fill="#161d2b" stroke="#00e5ff" stroke-opacity="0.3"/>
+  <text x="395" y="422" font-family="sans-serif" font-size="12" font-weight="bold" fill="#00e5ff">Wireshark Libpcap Generator</text>
+
+  <!-- Right: 300mm Fab Equipment Tool -->
+  <rect x="710" y="120" width="240" height="320" rx="10" fill="#161d2b" stroke="#00e676" stroke-width="1.5"/>
+  <rect x="710" y="120" width="240" height="44" rx="10" fill="#00e676" fill-opacity="0.15"/>
+  <text x="730" y="148" font-family="sans-serif" font-size="15" font-weight="bold" fill="#00e676">300mm Wafer Fab Tool</text>
+  <text x="730" y="190" font-family="monospace" font-size="12" fill="#ffffff">IP: 10.100.4.15</text>
+  <text x="730" y="215" font-family="sans-serif" font-size="12" fill="#8e9cb5">• EUV Lithography / Etch</text>
+  <text x="730" y="240" font-family="sans-serif" font-size="12" fill="#8e9cb5">• HSMS Port: TCP 5000</text>
+  <text x="730" y="265" font-family="sans-serif" font-size="12" fill="#8e9cb5">• 25-Slot FOUP Carrier</text>
+  <text x="730" y="290" font-family="sans-serif" font-size="12" fill="#8e9cb5">• Optical Slot Sensors</text>
+  <text x="730" y="315" font-family="sans-serif" font-size="12" fill="#8e9cb5">• GEM State: ONLINE_REMOTE</text>
+
+  <!-- Arrows -->
+  <line x1="290" y1="280" x2="360" y2="280" stroke="#00e5ff" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="358,276 366,280 358,284" fill="#00e5ff"/>
+
+  <line x1="640" y1="280" x2="710" y2="280" stroke="#00e676" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="708,276 716,280 708,284" fill="#00e676"/>
+</svg>
